@@ -1,0 +1,22 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin: 40px 0;
+
+    @media (min-width: 64em){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__block {
+        background-color: $white;
+        color: $darkGray;
+        padding: 20px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            transform: translateY(-20px);
+        }
+    }
+}
